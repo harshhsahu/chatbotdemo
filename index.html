@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chatbot</title>
+    <style>
+      :root {
+        font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+        color: #f2f2f7;
+        background: #05060a;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(180deg, #0f1115 0%, #05060a 100%);
+      }
+      #chatbot-host {
+        width: min(480px, 90vw);
+        height: min(640px, 90vh);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 25px 50px rgba(5, 6, 10, 0.6);
+        background: #08090d;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .loading {
+        display: grid;
+        place-items: center;
+        height: 100%;
+        font-size: 0.95rem;
+        color: #9ca3af;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chatbot-host">
+      <div class="loading">Chatbot is loading…</div>
+    </div>
+
+    <script
+      id="chatbot-main-script"
+      embedToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcmdfaWQiOiI1ODU0NiIsImNoYXRib3RfaWQiOiI2OTcxMTllN2Y2MGRkNWJmNjRlY2ZiZjYiLCJ1c2VyX2lkIjoidGVzdGluZyJ9.58gqIPyzu1DE6KCW-LjQ02J_higQkoZNxwFu7QHkz-M"
+      bridgeName="Narcotics_Control_NCB"
+      threadId="Narcotics_Control_NCB"
+      src="https://chatbot-embed.viasocket.com/chatbot-prod.js"
+      aria-live="polite"
+      defaultOpen="true"
+      fullScreen="true"
+      hideCloseButton="true"
+    ></script>
+  </body>
+</html>
